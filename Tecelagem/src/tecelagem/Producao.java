@@ -44,9 +44,9 @@ public class Producao extends Pessoa {
         horasNoturnas = horas;
     }
     
-    @Override
-    public Double SalarioLiquido(){
-        return (getSalario()* horasDiurnas)+(getSalario()*(horasNoturnas * 1.30));
+   @Override
+    public Double salarioLiquido(){
+        return (getSalario()* horasDiurnas)+((getSalario()* 1.30)*horasNoturnas) ;
     }
     
     @Override
@@ -61,7 +61,7 @@ public class Producao extends Pessoa {
         System.out.println("Horas Diurnas : " + horasDiurnas);
         System.out.println("Horas Noturnas : " + horasNoturnas);
         System.out.println("Salario Base : " + getSalario());
-        System.out.println("Salrio Liquido : " + SalarioLiquido());
+        System.out.println("Salrio Liquido : " + salarioLiquido());
         System.out.println("==================================================");
         
     }
