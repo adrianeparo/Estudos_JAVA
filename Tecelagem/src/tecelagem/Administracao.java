@@ -1,6 +1,18 @@
 
 package tecelagem;
 
+/*Os funcionários da administração têm salário fixo.
+ No caso dos funcionários administrativos o salário base é o salário bruto do funcionário.
+
+ Método Para os funcionários administrativos:
+
+ - void registrarFalta( ): As faltas vão sendo acumuladas durante o mês e depois são descontadas do salário base para calcular o salário líquido.
+Cada falta desconta 1/30 do salário base.
+Este método incrementa em um o número de faltas. 
+
+ - O método novoMes( ) zera a quantidade de faltas.
+*/
+
 public class Administracao extends Pessoa {
     private int faltas;
 
@@ -34,6 +46,7 @@ public class Administracao extends Pessoa {
     @Override
     public void hollerith(){
         super.hollerith();
+        System.out.println("Salario Base : " + getSalario());
         System.out.println("Salario : " + salarioLiquido());
         System.out.println("Faltas : " + faltas);
         System.out.println("==================================================");

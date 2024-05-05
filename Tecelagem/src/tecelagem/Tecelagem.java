@@ -1,20 +1,15 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package tecelagem;
 
-/**
- *
- * @author adria
- */
 public class Tecelagem {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+       Administracao a1 = new Administracao("Marcia", "832hfhrue", 2500.00);
+       a1.hollerith();
+       a1.registrarFalta();
+       a1.registrarFalta();
+       a1.hollerith();
+       a1.novoMes();
+       a1.hollerith();
     }
     
 }
